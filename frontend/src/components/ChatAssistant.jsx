@@ -258,22 +258,23 @@ const ChatAssistant = () => {
     setIsLoading(true);
 
     try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 55000);
       const res = await fetch(`${BACKEND_URL}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: userMsg }),
+        signal: controller.signal,
       });
+      clearTimeout(timeout);
       if (!res.ok) throw new Error(`Server error: ${res.status}`);
       const data = await res.json();
       setMessages((prev) => [...prev, { role: 'assistant', content: data.reply }]);
-    } catch {
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: 'assistant',
-          content: '⚠️ I seem to be offline right now. Please make sure the backend server is running!',
-        },
-      ]);
+    } catch (err) {
+      const msg = err.name === 'AbortError'
+        ? '⚠️ The server is waking up from sleep (Render free tier). Please try again in a moment!'
+        : '⚠️ Cannot reach the AI server. Make sure the backend is deployed and GROQ_API_KEY is set in Render environment variables.';
+      setMessages((prev) => [...prev, { role: 'assistant', content: msg }]);
     } finally {
       setIsLoading(false);
     }
