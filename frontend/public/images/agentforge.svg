@@ -1,0 +1,41 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" rx="16" fill="#0a222a" />
+  <g opacity="0.08">
+    <circle cx="120" cy="80" r="180" fill="#22d3ee" />
+    <circle cx="690" cy="380" r="170" fill="#06b6d4" />
+  </g>
+  <rect x="60" y="55" width="100" height="38" rx="8" fill="#22d3ee" opacity="0.25" />
+  <text x="68" y="80" fill="#22d3ee" font-size="14" font-weight="700" font-family="system-ui">AGENT</text>
+  <rect x="175" y="55" width="100" height="38" rx="8" fill="#06b6d4" opacity="0.2" />
+  <text x="185" y="80" fill="#06b6d4" font-size="14" font-weight="700" font-family="system-ui">FORGE</text>
+  <rect x="60" y="115" width="260" height="22" rx="10" fill="#22d3ee" opacity="0.35" />
+  <rect x="60" y="150" width="200" height="14" rx="7" fill="#22d3ee" opacity="0.25" />
+  <rect x="60" y="180" width="240" height="14" rx="7" fill="#22d3ee" opacity="0.2" />
+  <rect x="60" y="230" width="130" height="44" rx="22" fill="#22d3ee" />
+  <text x="80" y="258" fill="#0a222a" font-size="14" font-weight="800" font-family="system-ui">Deploy</text>
+  <rect x="210" y="230" width="130" height="44" rx="22" fill="#22d3ee" opacity="0.4" />
+  <text x="232" y="258" fill="#22d3ee" font-size="14" font-weight="700" font-family="system-ui" opacity="0.8">Monitor</text>
+  <rect x="420" y="85" width="320" height="210" rx="14" fill="#22d3ee" opacity="0.05" />
+  <rect x="420" y="85" width="320" height="210" rx="14" fill="none" stroke="#22d3ee" stroke-width="1.5" opacity="0.25" />
+  <circle cx="460" cy="130" r="22" fill="#22d3ee" opacity="0.25" />
+  <circle cx="460" cy="130" r="10" fill="#22d3ee" opacity="0.6" />
+  <text x="495" y="135" fill="#22d3ee" font-size="14" font-weight="700" font-family="system-ui">AI Agent</text>
+  <rect x="570" y="110" width="70" height="38" rx="8" fill="#22d3ee" opacity="0.15" />
+  <text x="583" y="134" fill="#22d3ee" font-size="12" font-weight="700" font-family="system-ui">Plan</text>
+  <rect x="650" y="110" width="70" height="38" rx="8" fill="#22d3ee" opacity="0.1" />
+  <text x="663" y="134" fill="#22d3ee" font-size="12" font-weight="700" font-family="system-ui">Act</text>
+  <line x1="460" y1="160" x2="460" y2="195" stroke="#22d3ee" stroke-width="2" opacity="0.4" />
+  <rect x="435" y="200" width="60" height="30" rx="6" fill="#22d3ee" opacity="0.25" />
+  <text x="443" y="220" fill="#22d3ee" font-size="11" font-weight="700" font-family="system-ui">Memory</text>
+  <rect x="510" y="200" width="60" height="30" rx="6" fill="#22d3ee" opacity="0.2" />
+  <text x="520" y="220" fill="#22d3ee" font-size="11" font-weight="700" font-family="system-ui">Tools</text>
+  <rect x="585" y="200" width="70" height="30" rx="6" fill="#22d3ee" opacity="0.15" />
+  <text x="595" y="220" fill="#22d3ee" font-size="11" font-weight="700" font-family="system-ui">Reason</text>
+  <rect x="440" y="255" width="280" height="24" rx="12" fill="#22d3ee" opacity="0.15" />
+  <text x="470" y="272" fill="#22d3ee" font-size="12" font-weight="600" font-family="system-ui">Autonomous Execution</text>
+  <rect x="60" y="320" width="680" height="100" rx="12" fill="#22d3ee" opacity="0.06" />
+  <rect x="80" y="338" width="220" height="10" rx="5" fill="#22d3ee" opacity="0.45" />
+  <rect x="80" y="358" width="170" height="10" rx="5" fill="#22d3ee" opacity="0.3" />
+  <rect x="80" y="378" width="280" height="10" rx="5" fill="#22d3ee" opacity="0.2" />
+  <text x="60" y="110" fill="#22d3ee" font-size="22" font-weight="700" font-family="system-ui">AgentForge</text>
+</svg>

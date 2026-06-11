@@ -1,0 +1,35 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" rx="16" fill="#2a0808" />
+  <g opacity="0.08">
+    <circle cx="180" cy="100" r="180" fill="#f87171" />
+    <circle cx="650" cy="370" r="160" fill="#ef4444" />
+  </g>
+  <rect x="60" y="55" width="100" height="38" rx="8" fill="#f87171" opacity="0.25" />
+  <text x="68" y="80" fill="#f87171" font-size="14" font-weight="700" font-family="system-ui">VIDEO</text>
+  <rect x="175" y="55" width="80" height="38" rx="8" fill="#ef4444" opacity="0.2" />
+  <text x="185" y="80" fill="#ef4444" font-size="14" font-weight="700" font-family="system-ui">MIND</text>
+  <rect x="60" y="115" width="300" height="180" rx="14" fill="#f87171" opacity="0.08" />
+  <rect x="60" y="115" width="300" height="180" rx="14" fill="none" stroke="#f87171" stroke-width="2" opacity="0.4" />
+  <polygon points="180,150 180,260 270,205" fill="#f87171" opacity="0.7" />
+  <polygon points="180,150 180,260 270,205" fill="none" stroke="#f87171" stroke-width="1.5" />
+  <rect x="60" y="310" width="300" height="6" rx="3" fill="#f87171" opacity="0.3" />
+  <rect x="60" y="310" width="140" height="6" rx="3" fill="#f87171" opacity="0.6" />
+  <circle cx="80" cy="335" r="6" fill="#f87171" opacity="0.5" />
+  <text x="95" y="339" fill="#f87171" font-size="11" font-weight="500" font-family="system-ui" opacity="0.6">12:34 / 45:20</text>
+  <rect x="420" y="60" width="220" height="22" rx="10" fill="#f87171" opacity="0.35" />
+  <rect x="420" y="95" width="180" height="14" rx="7" fill="#f87171" opacity="0.25" />
+  <rect x="420" y="122" width="200" height="14" rx="7" fill="#f87171" opacity="0.2" />
+  <rect x="420" y="160" width="100" height="36" rx="18" fill="#f87171" />
+  <text x="432" y="183" fill="#2a0808" font-size="13" font-weight="800" font-family="system-ui">Ask AI</text>
+  <rect x="535" y="160" width="100" height="36" rx="18" fill="#f87171" opacity="0.4" />
+  <text x="547" y="183" fill="#f87171" font-size="13" font-weight="700" font-family="system-ui" opacity="0.8">Summary</text>
+  <rect x="420" y="220" width="320" height="80" rx="10" fill="#f87171" opacity="0.06" />
+  <rect x="420" y="220" width="320" height="80" rx="10" fill="none" stroke="#f87171" stroke-width="1" opacity="0.2" />
+  <text x="440" y="245" fill="#f87171" font-size="13" font-weight="600" font-family="system-ui">Q: What is this video about?</text>
+  <text x="440" y="270" fill="#f87171" font-size="13" font-weight="500" font-family="system-ui" opacity="0.6">A: This video covers agentic AI...</text>
+  <rect x="60" y="370" width="680" height="50" rx="10" fill="#f87171" opacity="0.06" />
+  <rect x="80" y="385" width="500" height="12" rx="6" fill="#f87171" opacity="0.25" />
+  <circle cx="620" cy="391" r="16" fill="#f87171" opacity="0.4" />
+  <polygon points="615,381 615,401 630,391" fill="#f87171" opacity="0.7" />
+  <text x="420" y="135" fill="#f87171" font-size="22" font-weight="700" font-family="system-ui">VideoMind AI</text>
+</svg>

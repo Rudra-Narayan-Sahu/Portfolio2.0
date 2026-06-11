@@ -1,0 +1,35 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" rx="16" fill="#0c1a30" />
+  <g opacity="0.08">
+    <circle cx="140" cy="80" r="180" fill="#60a5fa" />
+    <circle cx="670" cy="380" r="170" fill="#818cf8" />
+  </g>
+  <rect x="60" y="55" width="80" height="38" rx="8" fill="#60a5fa" opacity="0.25" />
+  <text x="68" y="80" fill="#60a5fa" font-size="14" font-weight="700" font-family="system-ui">WEB</text>
+  <rect x="155" y="55" width="80" height="38" rx="8" fill="#818cf8" opacity="0.2" />
+  <text x="163" y="80" fill="#818cf8" font-size="14" font-weight="700" font-family="system-ui">SAGE</text>
+  <circle cx="70" cy="55" r="10" fill="#60a5fa" opacity="0.3" />
+  <line x1="85" y1="55" x2="740" y2="55" stroke="#60a5fa" stroke-width="1.5" opacity="0.2" />
+  <rect x="60" y="115" width="260" height="22" rx="10" fill="#60a5fa" opacity="0.35" />
+  <rect x="60" y="150" width="200" height="14" rx="7" fill="#60a5fa" opacity="0.25" />
+  <rect x="60" y="180" width="240" height="14" rx="7" fill="#60a5fa" opacity="0.2" />
+  <rect x="60" y="230" width="130" height="44" rx="22" fill="#60a5fa" />
+  <text x="80" y="258" fill="#0c1a30" font-size="14" font-weight="800" font-family="system-ui">Search Web</text>
+  <rect x="210" y="230" width="130" height="44" rx="22" fill="#60a5fa" opacity="0.4" />
+  <text x="232" y="258" fill="#60a5fa" font-size="14" font-weight="700" font-family="system-ui" opacity="0.8">Ask AI</text>
+  <rect x="420" y="90" width="320" height="200" rx="14" fill="#60a5fa" opacity="0.05" />
+  <rect x="420" y="90" width="320" height="200" rx="14" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.25" />
+  <text x="440" y="120" fill="#60a5fa" font-size="13" font-weight="600" font-family="system-ui" opacity="0.7">website.com</text>
+  <rect x="440" y="135" width="280" height="10" rx="5" fill="#60a5fa" opacity="0.3" />
+  <rect x="440" y="155" width="240" height="10" rx="5" fill="#60a5fa" opacity="0.2" />
+  <rect x="440" y="175" width="260" height="10" rx="5" fill="#60a5fa" opacity="0.25" />
+  <rect x="440" y="200" width="140" height="34" rx="8" fill="#60a5fa" opacity="0.15" />
+  <text x="455" y="222" fill="#60a5fa" font-size="13" font-weight="600" font-family="system-ui">Scrape Data</text>
+  <rect x="440" y="245" width="220" height="34" rx="8" fill="#818cf8" opacity="0.15" />
+  <text x="455" y="267" fill="#818cf8" font-size="13" font-weight="600" font-family="system-ui">Generated Response</text>
+  <rect x="60" y="320" width="680" height="100" rx="12" fill="#60a5fa" opacity="0.06" />
+  <rect x="80" y="338" width="220" height="10" rx="5" fill="#60a5fa" opacity="0.45" />
+  <rect x="80" y="358" width="170" height="10" rx="5" fill="#60a5fa" opacity="0.3" />
+  <rect x="80" y="378" width="280" height="10" rx="5" fill="#60a5fa" opacity="0.2" />
+  <text x="60" y="110" fill="#60a5fa" font-size="22" font-weight="700" font-family="system-ui">WebSage AI</text>
+</svg>
