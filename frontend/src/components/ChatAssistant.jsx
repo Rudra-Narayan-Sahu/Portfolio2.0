@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiX, FiSend, FiUser } from 'react-icons/fi';
 import { RiRobot2Line } from 'react-icons/ri';
 
-const BACKEND_URL = 'https://portfolio-ai-assistant-0gv1.onrender.com';
+const BACKEND_URL = 'https://portfolio-ai-assistant-0gv1.onrender.com/';
 
 /* ─── Spinning loader for the send button ─── */
 const SpinnerIcon = () => (
