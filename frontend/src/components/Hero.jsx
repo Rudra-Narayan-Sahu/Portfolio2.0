@@ -58,7 +58,7 @@ const Hero = () => {
           {/* Headline */}
           <motion.h1
             variants={itemVariants}
-            className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-bold text-white leading-[1.05] tracking-tight mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6"
           >
             <span className="block">Train<span className="text-theme-color">.</span></span>
             <span className="block">Build<span className="text-theme-color">.</span></span>

@@ -66,9 +66,9 @@ export default {
         'pulse-glow': 'pulse-glow 4s ease-in-out infinite',
       },
       fontFamily: {
-        'sans': ['Outfit', 'sans-serif'],
-        'inter': ['Inter', 'sans-serif'],
-        'mono': ['Fira Code', 'monospace'],
+        'sans': ['Rubik', 'sans-serif'],
+        'serif': ['Merriweather', 'serif'],
+        'mono': ['monospace'],
       },
     },
   },

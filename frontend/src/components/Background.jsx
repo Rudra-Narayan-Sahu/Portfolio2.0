@@ -57,35 +57,6 @@ const Particles = ({ color }) => {
     );
 };
 
-const CursorGlow = ({ color }) => {
-    const [mousePosition, setMousePosition] = useState({ x: -200, y: -200 });
-
-    useEffect(() => {
-        const updateMousePosition = (e) => {
-            setMousePosition({ x: e.clientX, y: e.clientY });
-        };
-        window.addEventListener('mousemove', updateMousePosition);
-        return () => window.removeEventListener('mousemove', updateMousePosition);
-    }, []);
-
-    return (
-        <motion.div
-            className="pointer-events-none fixed top-0 left-0 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] rounded-full blur-[80px] sm:blur-[100px] opacity-20 -z-10"
-            animate={{
-                x: mousePosition.x - (window.innerWidth < 768 ? 150 : 200),
-                y: mousePosition.y - (window.innerWidth < 768 ? 150 : 200),
-                backgroundColor: color,
-            }}
-            transition={{
-                type: "tween",
-                ease: "easeOut",
-                duration: 0.5,
-                backgroundColor: { duration: 2, ease: "easeInOut" }
-            }}
-        />
-    );
-};
-
 export default function Background() {
     const { currentColor } = useBackgroundTheme();
 
@@ -119,9 +90,6 @@ export default function Background() {
 
             {/* Layer 4: Floating Particles */}
             <Particles color={currentColor} />
-            
-            {/* Layer 5: Interactive Cursor Glow */}
-            <CursorGlow color={currentColor} />
         </div>
     );
 }
