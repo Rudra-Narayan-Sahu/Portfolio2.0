@@ -52,7 +52,7 @@ export default function Navbar() {
                     className="text-2xl font-bold"
                     whileHover={{ scale: 1.05 }}
                 >
-                    Rudra<span className="text-theme-color">.</span>
+                    Rudra<span className="text-theme-color"> Narayan Sahu</span>
                 </motion.h1>
 
                 {/* Desktop Menu */}

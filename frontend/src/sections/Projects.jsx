@@ -5,6 +5,26 @@ import { projects } from '../constants/data';
 import { containerVariants, itemVariants, slideInLeftVariants, slideInRightVariants } from '../utils/animationVariants';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
+import talentlensImg from '../assets/projects/TalntlensAI.png';
+import artfusionImg from '../assets/projects/ArtFusion.png';
+import intelliclassImg from '../assets/projects/InteliClass.png';
+import websageImg from '../assets/projects/WebAge AI.png';
+import videomindImg from '../assets/projects/VideoMindAI.png';
+import codenationImg from '../assets/projects/Codenation.png';
+import genvisionImg from '../assets/projects/GenVision.png';
+import agentforgeImg from '../assets/projects/AgentForce.png';
+
+const projectImages = {
+  1: talentlensImg,
+  2: artfusionImg,
+  3: intelliclassImg,
+  4: websageImg,
+  5: videomindImg,
+  6: codenationImg,
+  7: genvisionImg,
+  8: agentforgeImg,
+};
+
 const Projects = () => {
   const [ref, isInView] = useScrollAnimation(0.2);
 
@@ -59,25 +79,18 @@ const ProjectCard = ({ project, index }) => {
       >
         <div className="relative w-full rounded-xl overflow-hidden border border-theme-color/20 shadow-lg shadow-black/30"
              style={{ aspectRatio: '16/9' }}>
-          {project.image && !project.image.includes('placeholder') ? (
+          {projectImages[project.id] ? (
             <img
-              src={project.image}
+              src={projectImages[project.id]}
               alt={project.title}
               className="w-full h-full object-cover object-top"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-                e.currentTarget.nextSibling.style.display = 'flex';
-              }}
             />
-          ) : null}
-          {/* Fallback placeholder shown when image missing */}
-          <div
-            className="w-full h-full bg-gradient-to-br from-theme-color/20 via-theme-color/10 to-transparent flex flex-col items-center justify-center gap-3"
-            style={{ display: project.image ? 'none' : 'flex' }}
-          >
-            <span className="text-5xl">📁</span>
-            <span className="text-theme-color/50 text-sm font-medium">{project.title}</span>
-          </div>
+          ) : (
+            <div className="w-full h-full bg-gradient-to-br from-theme-color/20 via-theme-color/10 to-transparent flex flex-col items-center justify-center gap-3">
+              <span className="text-5xl">📁</span>
+              <span className="text-theme-color/50 text-sm font-medium">{project.title}</span>
+            </div>
+          )}
 
           {/* Overlay gradient at bottom for aesthetic */}
           <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#0B0F0D]/60 to-transparent pointer-events-none" />
