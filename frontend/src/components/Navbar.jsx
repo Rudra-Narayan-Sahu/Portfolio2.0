@@ -52,7 +52,7 @@ export default function Navbar() {
                     className="text-2xl font-bold"
                     whileHover={{ scale: 1.05 }}
                 >
-                    Rudra<span className="text-theme-color"> Narayan Sahu</span>
+                    Rudra<span className="text-white"> Narayan Sahu</span>
                 </motion.h1>
 
                 {/* Desktop Menu */}
@@ -66,7 +66,7 @@ export default function Navbar() {
                             className="
                                 cursor-pointer
                                 text-[#B8C1BC]
-                                hover:text-theme-color
+                                hover:text-white
                                 transition duration-300
                                 relative group
                             "
@@ -124,7 +124,7 @@ export default function Navbar() {
                                 className="
                                     cursor-pointer
                                     text-[#B8C1BC]
-                                    hover:text-theme-color
+                                    hover:text-white
                                     transition duration-300
                                     py-2
                                 "

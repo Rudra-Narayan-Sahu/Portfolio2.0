@@ -48,13 +48,13 @@ const Skills = () => {
         >
           <motion.h2 variants={itemVariants} className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             Skills &
-            <span className="block text-theme-color">Expertise</span>
+            <span className="block text-white">Expertise</span>
           </motion.h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-10 md:mt-16">
             {skillCategories.map((category, catIndex) => (
               <motion.div key={category.name} custom={catIndex} variants={itemVariants}>
-                <h3 className="text-xl font-semibold mb-6 text-theme-color">{category.name}</h3>
+                <h3 className="text-xl font-semibold mb-6 text-white">{category.name}</h3>
                 <div className="space-y-4">
                   {category.items.map((skill, skillIndex) => (
                     <SkillItem key={skill.name} skill={skill} index={skillIndex} />
@@ -79,10 +79,10 @@ const SkillItem = ({ skill, index }) => {
       whileHover={{ scale: 1.05 }}
       className="flex items-center gap-4 p-4 rounded-lg bg-[#111715]/50 backdrop-blur-sm border border-theme-color/20 hover:border-theme-color/50 transition group cursor-pointer"
     >
-      <div className="text-2xl text-theme-color group-hover:scale-110 transition">
+      <div className="text-2xl text-white group-hover:scale-110 transition">
         <IconComponent />
       </div>
-      <span className="text-[#B8C1BC] font-medium group-hover:text-theme-color transition">
+      <span className="text-[#B8C1BC] font-medium group-hover:text-white transition">
         {skill.name}
       </span>
     </motion.div>

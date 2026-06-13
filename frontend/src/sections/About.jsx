@@ -19,7 +19,7 @@ const About = () => {
           <motion.div variants={itemVariants} className="space-y-6">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
               About
-              <span className="block text-theme-color">Me</span>
+              <span className="block text-white">Me</span>
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-[#B8C1BC] leading-relaxed">
               I'm <strong className="text-white">Rudra Narayan Sahu</strong>, a 3rd year B.Tech student
@@ -69,7 +69,7 @@ const StatCard = ({ stat, isInView }) => {
       variants={itemVariants}
       className="p-6 bg-[#111715]/50 backdrop-blur-sm border border-theme-color/20 rounded-lg hover:border-theme-color/50 transition"
     >
-      <p className="text-4xl font-bold text-theme-color mb-2">{count}+</p>
+      <p className="text-4xl font-bold text-white mb-2">{count}+</p>
       <p className="text-sm text-[#B8C1BC]">{stat.label}</p>
     </motion.div>
   );

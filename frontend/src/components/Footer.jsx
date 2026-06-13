@@ -1,20 +1,20 @@
 ﻿// src/components/Footer.jsx
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiTwitter, FiMail } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiCode } from 'react-icons/fi';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: FiGithub, link: 'https://github.com/rudrasahu', label: 'GitHub' },
-    { icon: FiLinkedin, link: 'https://linkedin.com/in/rudrasahu', label: 'LinkedIn' },
-    { icon: FiTwitter, link: 'https://twitter.com/rudrasahu', label: 'Twitter' },
-    { icon: FiMail, link: 'mailto:abcd@gmail.com', label: 'Email' },
+    { icon: FiGithub, link: 'https://github.com/Rudra-Narayan-Sahu', label: 'GitHub' },
+    { icon: FiLinkedin, link: 'https://www.linkedin.com/in/rudra-narayan-sahu-16a946328/', label: 'LinkedIn' },
+    { icon: <FiLeetcode></FiLeetcode>, link: 'https://leetcode.com/u/Rudranarayansahu18/', label: 'Leetcode' },
+    { icon: FiMail, link: 'rudrasahu9007@gmail.com', label: 'Email' },
   ];
 
   return (
     <footer className="relative py-12 z-10 border-t border-theme-color/10">
-      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 max-w-[1920px]">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <motion.div

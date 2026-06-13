@@ -40,7 +40,7 @@ const Projects = () => {
           <motion.div variants={itemVariants} className="mb-12 md:mb-16">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
               Featured
-              <span className="block text-theme-color">Projects</span>
+              <span className="block text-white">Projects</span>
             </h2>
             <p className="text-base md:text-lg text-[#B8C1BC] mt-4 max-w-2xl">
               Showcasing my journey through full-stack development, AI integration, and building impactful solutions.
@@ -88,7 +88,7 @@ const ProjectCard = ({ project, index }) => {
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-theme-color/20 via-theme-color/10 to-transparent flex flex-col items-center justify-center gap-3">
               <span className="text-5xl">📁</span>
-              <span className="text-theme-color/50 text-sm font-medium">{project.title}</span>
+              <span className="text-white/50 text-sm font-medium">{project.title}</span>
             </div>
           )}
 
@@ -115,21 +115,21 @@ const ProjectCard = ({ project, index }) => {
         {/* Problem & Solution */}
         <div className="space-y-2.5">
           <div className="p-3.5 bg-[#111715]/60 rounded-lg border-l-2 border-theme-color">
-            <p className="text-xs font-bold text-theme-color mb-1 uppercase tracking-wider">Problem</p>
+            <p className="text-xs font-bold text-white mb-1 uppercase tracking-wider">Problem</p>
             <p className="text-sm text-[#B8C1BC] leading-relaxed">{project.problem}</p>
           </div>
           <div className="p-3.5 bg-[#111715]/60 rounded-lg border-l-2 border-theme-color">
-            <p className="text-xs font-bold text-theme-color mb-1 uppercase tracking-wider">Solution</p>
+            <p className="text-xs font-bold text-white mb-1 uppercase tracking-wider">Solution</p>
             <p className="text-sm text-[#B8C1BC] leading-relaxed">{project.solution}</p>
           </div>
         </div>
 
         {/* Tech Stack */}
         <div>
-          <p className="text-xs font-bold text-theme-color mb-2.5 uppercase tracking-wider">Tech Stack</p>
+          <p className="text-xs font-bold text-white mb-2.5 uppercase tracking-wider">Tech Stack</p>
           <div className="flex flex-wrap gap-2">
             {project.tech.map((tech) => (
-              <span key={tech} className="px-3 py-1 bg-theme-color/10 border border-theme-color/30 rounded-full text-xs sm:text-sm text-theme-color">
+              <span key={tech} className="px-3 py-1 bg-theme-color/10 border border-theme-color/30 rounded-full text-xs sm:text-sm text-white">
                 {tech}
               </span>
             ))}
@@ -138,7 +138,7 @@ const ProjectCard = ({ project, index }) => {
 
         {/* Achievements */}
         <div>
-          <p className="text-xs font-bold text-theme-color mb-2.5 uppercase tracking-wider">Key Achievements</p>
+          <p className="text-xs font-bold text-white mb-2.5 uppercase tracking-wider">Key Achievements</p>
           <ul className="space-y-1.5">
             {project.achievements.map((achievement) => (
               <li key={achievement} className="text-sm text-[#B8C1BC] flex items-center gap-2">
@@ -168,7 +168,7 @@ const ProjectCard = ({ project, index }) => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 px-5 py-2.5 border border-theme-color text-theme-color font-semibold rounded-lg hover:bg-theme-color/10 transition text-sm"
+            className="flex items-center gap-2 px-5 py-2.5 border border-theme-color text-white font-semibold rounded-lg hover:bg-theme-color/10 transition text-sm"
           >
             <FiExternalLink size={16} />
             Live Demo

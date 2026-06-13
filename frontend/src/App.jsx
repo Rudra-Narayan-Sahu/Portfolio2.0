@@ -1,5 +1,4 @@
 import Background from "./components/Background";
-import ThemeSwitcher from "./components/ThemeSwitcher";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./sections/About";
@@ -14,7 +13,6 @@ function App() {
     return (
         <>
             <Background />
-            <ThemeSwitcher />
             <Navbar />
             <main className="relative z-10">
                 <Hero />

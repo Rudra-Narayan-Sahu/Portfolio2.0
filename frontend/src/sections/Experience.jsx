@@ -20,7 +20,7 @@ const Experience = () => {
           <motion.div variants={itemVariants} className="mb-12 md:mb-16">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
               My
-              <span className="block text-theme-color">Journey</span>
+              <span className="block text-white">Journey</span>
             </h2>
           </motion.div>
 
@@ -46,9 +46,9 @@ const Experience = () => {
                     whileHover={{ scale: 1.02 }}
                     className="p-5 bg-[#111715]/50 backdrop-blur-sm border border-theme-color/20 hover:border-theme-color/50 rounded-lg transition"
                   >
-                    <h3 className="text-lg font-bold text-theme-color mb-1">{item.milestone}</h3>
+                    <h3 className="text-lg font-bold text-white mb-1">{item.milestone}</h3>
                     <p className="text-sm text-[#B8C1BC] mb-2 leading-relaxed">{item.description}</p>
-                    <span className="text-xs font-semibold text-theme-color/70 bg-theme-color/10 px-2 py-0.5 rounded-full">
+                    <span className="text-xs font-semibold text-white/70 bg-theme-color/10 px-2 py-0.5 rounded-full">
                       {item.year}
                     </span>
                   </motion.div>
@@ -90,9 +90,9 @@ const TimelineItemDesktop = ({ item, index, isEven }) => {
           whileHover={{ scale: 1.02 }}
           className="p-6 bg-[#111715]/50 backdrop-blur-sm border border-theme-color/20 hover:border-theme-color/50 rounded-lg transition"
         >
-          <h3 className="text-xl font-bold text-theme-color mb-2">{item.milestone}</h3>
+          <h3 className="text-xl font-bold text-white mb-2">{item.milestone}</h3>
           <p className="text-[#B8C1BC] mb-3">{item.description}</p>
-          <span className="text-sm font-semibold text-theme-color/70">{item.year}</span>
+          <span className="text-sm font-semibold text-white/70">{item.year}</span>
         </motion.div>
       </div>
 

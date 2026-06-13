@@ -58,7 +58,7 @@ const Particles = ({ color }) => {
 };
 
 export default function Background() {
-    const { currentColor } = useBackgroundTheme();
+    const { glowColor } = useBackgroundTheme();
 
     return (
         <div className="fixed inset-0 -z-10 overflow-hidden bg-[#0B0F0D]">
@@ -66,7 +66,7 @@ export default function Background() {
             <motion.div
                 className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] sm:w-[700px] sm:h-[700px] rounded-full blur-[130px] sm:blur-[150px] opacity-25"
                 animate={{
-                    backgroundColor: currentColor,
+                    backgroundColor: glowColor,
                     x: [0, -150, 50, 0],
                     y: [0, 150, -50, 0],
                 }}
@@ -89,7 +89,7 @@ export default function Background() {
             />
 
             {/* Layer 4: Floating Particles */}
-            <Particles color={currentColor} />
+            <Particles color={glowColor} />
         </div>
     );
 }

@@ -61,7 +61,7 @@ const Contact = () => {
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
               Let's Build
-              <span className="block text-theme-color">Something Great</span>
+              <span className="block text-white">Something Great</span>
             </h2>
             <p className="text-lg text-[#B8C1BC] max-w-2xl mx-auto">
               Have a project in mind? Let's collaborate and create something amazing together.
@@ -81,8 +81,8 @@ const Contact = () => {
                   whileHover={{ scale: 1.05 }}
                   className="p-4 bg-[#111715]/50 backdrop-blur-sm border border-theme-color/20 hover:border-theme-color/50 rounded-lg text-center transition group"
                 >
-                  <Icon className="text-2xl text-theme-color mx-auto mb-2 group-hover:scale-110 transition" />
-                  <p className="text-sm font-semibold text-[#B8C1BC] group-hover:text-theme-color transition">
+                  <Icon className="text-2xl text-white mx-auto mb-2 group-hover:scale-110 transition" />
+                  <p className="text-sm font-semibold text-[#B8C1BC] group-hover:text-white transition">
                     {contact.label}
                   </p>
                   <p className="text-xs text-[#B8C1BC]/60 truncate">{contact.value}</p>
@@ -128,7 +128,7 @@ const Contact = () => {
                 <motion.p
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  className="text-theme-color"
+                  className="text-white"
                 >
                   ✓ Message sent successfully!
                 </motion.p>

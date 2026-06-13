@@ -14,8 +14,8 @@ const SpinnerIcon = () => (
       width: 16,
       height: 16,
       borderRadius: '50%',
-      border: '2px solid rgba(61,220,132,0.25)',
-      borderTopColor: '#3ddc84',
+      border: '2px solid rgba(255,255,255,0.25)',
+      borderTopColor: '#ffffff',
     }}
   />
 );
@@ -35,12 +35,12 @@ const TypingIndicator = () => (
         width: 34,
         height: 34,
         borderRadius: '50%',
-        background: 'linear-gradient(135deg, #3ddc84, #1aad5e)',
+        background: 'linear-gradient(135deg, #ffffff, #aaaaaa)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         flexShrink: 0,
-        boxShadow: '0 0 12px rgba(61,220,132,0.35)',
+        boxShadow: '0 0 12px rgba(255,255,255,0.35)',
       }}
     >
       <RiRobot2Line size={17} color="#0B0F0D" />
@@ -52,7 +52,7 @@ const TypingIndicator = () => (
         padding: '14px 18px',
         borderRadius: '20px 20px 20px 5px',
         background: 'rgba(255,255,255,0.06)',
-        border: '1px solid rgba(61,220,132,0.18)',
+        border: '1px solid rgba(255,255,255,0.18)',
         display: 'flex',
         flexDirection: 'column',
         gap: 8,
@@ -67,7 +67,7 @@ const TypingIndicator = () => (
               width: 8,
               height: 8,
               borderRadius: '50%',
-              background: 'var(--theme-color, #3ddc84)',
+              background: 'var(--theme-color, #ffffff)',
             }}
             animate={{
               y: [0, -7, 0],
@@ -85,13 +85,13 @@ const TypingIndicator = () => (
 
       {/* Thinking text with blinking cursor */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-        <span style={{ fontSize: 11.5, color: '#3ddc84', letterSpacing: 0.3 }}>
+        <span style={{ fontSize: 11.5, color: '#ffffff', letterSpacing: 0.3 }}>
           Thinking
         </span>
         {[0, 1, 2].map((i) => (
           <motion.span
             key={i}
-            style={{ fontSize: 13, color: '#3ddc84', lineHeight: 1 }}
+            style={{ fontSize: 13, color: '#ffffff', lineHeight: 1 }}
             animate={{ opacity: [0, 1, 0] }}
             transition={{
               duration: 1.2,
@@ -116,7 +116,7 @@ const LoadingBar = () => (
       bottom: 0,
       left: 0,
       height: 2,
-      background: 'linear-gradient(90deg, #3ddc84, #1aad5e)',
+      background: 'linear-gradient(90deg, #ffffff, #aaaaaa)',
       borderRadius: 2,
     }}
     initial={{ width: '0%' }}
@@ -147,12 +147,12 @@ const Message = ({ msg }) => {
             width: 34,
             height: 34,
             borderRadius: '50%',
-            background: 'linear-gradient(135deg, #3ddc84, #1aad5e)',
+            background: 'linear-gradient(135deg, #ffffff, #aaaaaa)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             flexShrink: 0,
-            boxShadow: '0 0 12px rgba(61,220,132,0.3)',
+            boxShadow: '0 0 12px rgba(255,255,255,0.3)',
           }}
         >
           <RiRobot2Line size={17} color="#0B0F0D" />
@@ -165,7 +165,7 @@ const Message = ({ msg }) => {
           padding: '12px 16px',
           borderRadius: isUser ? '20px 20px 5px 20px' : '20px 20px 20px 5px',
           background: isUser
-            ? 'linear-gradient(135deg, #3ddc84, #1aad5e)'
+            ? 'linear-gradient(135deg, #ffffff, #aaaaaa)'
             : 'rgba(255,255,255,0.06)',
           border: isUser ? 'none' : '1px solid rgba(255,255,255,0.1)',
           color: isUser ? '#0B0F0D' : '#e2e8e4',
@@ -175,7 +175,7 @@ const Message = ({ msg }) => {
           wordBreak: 'break-word',
           whiteSpace: 'pre-wrap',
           boxShadow: isUser
-            ? '0 4px 16px rgba(61,220,132,0.2)'
+            ? '0 4px 16px rgba(255,255,255,0.2)'
             : '0 2px 8px rgba(0,0,0,0.2)',
         }}
       >
@@ -308,8 +308,8 @@ const ChatAssistant = () => {
           borderRadius: '50%',
           border: 'none',
           cursor: 'pointer',
-          background: 'linear-gradient(135deg, #3ddc84, #1aad5e)',
-          boxShadow: '0 6px 28px rgba(61,220,132,0.5)',
+          background: 'linear-gradient(135deg, #ffffff, #aaaaaa)',
+          boxShadow: '0 6px 28px rgba(255,255,255,0.5)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -389,9 +389,9 @@ const ChatAssistant = () => {
               flexDirection: 'column',
               background: 'rgba(10, 14, 12, 0.97)',
               backdropFilter: 'blur(24px)',
-              border: '1px solid rgba(61,220,132,0.22)',
+              border: '1px solid rgba(255,255,255,0.22)',
               boxShadow:
-                '0 24px 70px rgba(0,0,0,0.65), 0 0 0 1px rgba(61,220,132,0.07)',
+                '0 24px 70px rgba(0,0,0,0.65), 0 0 0 1px rgba(255,255,255,0.07)',
             }}
           >
             {/* ── Header ── */}
@@ -399,8 +399,8 @@ const ChatAssistant = () => {
               style={{
                 padding: '18px 20px',
                 background:
-                  'linear-gradient(90deg, rgba(61,220,132,0.13), rgba(26,173,94,0.07))',
-                borderBottom: '1px solid rgba(61,220,132,0.14)',
+                  'linear-gradient(90deg, rgba(255,255,255,0.13), rgba(170,170,170,0.07))',
+                borderBottom: '1px solid rgba(255,255,255,0.14)',
                 display: 'flex',
                 alignItems: 'center',
                 gap: 13,
@@ -415,12 +415,12 @@ const ChatAssistant = () => {
                   width: 44,
                   height: 44,
                   borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #3ddc84, #1aad5e)',
+                  background: 'linear-gradient(135deg, #ffffff, #aaaaaa)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   flexShrink: 0,
-                  boxShadow: '0 0 16px rgba(61,220,132,0.4)',
+                  boxShadow: '0 0 16px rgba(255,255,255,0.4)',
                 }}
               >
                 <RiRobot2Line size={22} color="#0B0F0D" />
@@ -438,12 +438,12 @@ const ChatAssistant = () => {
                           width: 7,
                           height: 7,
                           borderRadius: '50%',
-                          background: '#facc15',
+                          background: '#888888',
                         }}
                         animate={{ opacity: [1, 0.3, 1] }}
                         transition={{ duration: 0.8, repeat: Infinity }}
                       />
-                      <span style={{ fontSize: 11.5, color: '#facc15', fontStyle: 'italic' }}>
+                      <span style={{ fontSize: 11.5, color: '#888888', fontStyle: 'italic' }}>
                         Thinking…
                       </span>
                     </>
@@ -454,12 +454,12 @@ const ChatAssistant = () => {
                           width: 7,
                           height: 7,
                           borderRadius: '50%',
-                          background: '#3ddc84',
+                          background: '#ffffff',
                         }}
                         animate={{ opacity: [1, 0.5, 1] }}
                         transition={{ duration: 2, repeat: Infinity }}
                       />
-                      <span style={{ fontSize: 11.5, color: '#3ddc84' }}>Online · Powered by Groq</span>
+                      <span style={{ fontSize: 11.5, color: '#ffffff' }}>Online · Powered by Groq</span>
                     </>
                   )}
                 </div>
@@ -492,7 +492,7 @@ const ChatAssistant = () => {
                 overflowY: 'auto',
                 padding: '18px 16px 10px',
                 scrollbarWidth: 'thin',
-                scrollbarColor: 'rgba(61,220,132,0.2) transparent',
+                scrollbarColor: 'rgba(255,255,255,0.2) transparent',
               }}
             >
               {messages.map((msg, i) => (
@@ -513,7 +513,7 @@ const ChatAssistant = () => {
                   <p
                     style={{
                       fontSize: 11,
-                      color: '#4a5e52',
+                      color: '#777777',
                       marginBottom: 10,
                       textAlign: 'center',
                       letterSpacing: 0.5,
@@ -530,8 +530,8 @@ const ChatAssistant = () => {
                         whileTap={{ scale: 0.97 }}
                         onClick={() => sendMessage(s.replace(/^\S+\s/, ''))}
                         style={{
-                          background: 'rgba(61,220,132,0.05)',
-                          border: '1px solid rgba(61,220,132,0.18)',
+                          background: 'rgba(255,255,255,0.05)',
+                          border: '1px solid rgba(255,255,255,0.18)',
                           borderRadius: 11,
                           padding: '10px 14px',
                           color: '#B8C1BC',
@@ -582,12 +582,12 @@ const ChatAssistant = () => {
                         width: 14,
                         height: 14,
                         borderRadius: '50%',
-                        border: '2px solid rgba(61,220,132,0.2)',
-                        borderTopColor: '#3ddc84',
+                        border: '2px solid rgba(255,255,255,0.2)',
+                        borderTopColor: '#ffffff',
                         flexShrink: 0,
                       }}
                     />
-                    <span style={{ fontSize: 12, color: '#3ddc84', fontStyle: 'italic' }}>
+                    <span style={{ fontSize: 12, color: '#ffffff', fontStyle: 'italic' }}>
                       AI is generating a response…
                     </span>
                   </motion.div>
@@ -600,7 +600,7 @@ const ChatAssistant = () => {
                   alignItems: 'flex-end',
                   gap: 10,
                   background: 'rgba(255,255,255,0.05)',
-                  border: `1px solid ${canSend ? 'rgba(61,220,132,0.4)' : 'rgba(61,220,132,0.18)'}`,
+                  border: `1px solid ${canSend ? 'rgba(255,255,255,0.4)' : 'rgba(255,255,255,0.18)'}`,
                   borderRadius: 16,
                   padding: '10px 10px 10px 16px',
                   transition: 'border-color 0.25s',
@@ -627,7 +627,7 @@ const ChatAssistant = () => {
                     background: 'transparent',
                     border: 'none',
                     outline: 'none',
-                    color: isLoading ? '#4a5e52' : '#e2e8e4',
+                    color: isLoading ? '#777777' : '#e2e8e4',
                     fontSize: 14,
                     resize: 'none',
                     lineHeight: 1.55,
@@ -651,21 +651,21 @@ const ChatAssistant = () => {
                     border: 'none',
                     cursor: canSend ? 'pointer' : 'not-allowed',
                     background: canSend
-                      ? 'linear-gradient(135deg, #3ddc84, #1aad5e)'
+                      ? 'linear-gradient(135deg, #ffffff, #aaaaaa)'
                       : 'rgba(255,255,255,0.06)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     flexShrink: 0,
                     transition: 'background 0.25s',
-                    boxShadow: canSend ? '0 4px 14px rgba(61,220,132,0.35)' : 'none',
+                    boxShadow: canSend ? '0 4px 14px rgba(255,255,255,0.35)' : 'none',
                   }}
                   aria-label="Send message"
                 >
                   {isLoading ? (
                     <SpinnerIcon />
                   ) : (
-                    <FiSend size={16} color={canSend ? '#0B0F0D' : '#4a5e52'} />
+                    <FiSend size={16} color={canSend ? '#0B0F0D' : '#777777'} />
                   )}
                 </motion.button>
               </div>
@@ -674,7 +674,7 @@ const ChatAssistant = () => {
                 style={{
                   margin: '8px 0 0',
                   fontSize: 10.5,
-                  color: '#3a4e42',
+                  color: '#666666',
                   textAlign: 'center',
                   letterSpacing: 0.3,
                 }}
