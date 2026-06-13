@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
+import profileImg from "../assets/profile.png";
 
 export default function Hero() {
     return (
         <section className="min-h-screen flex items-center
-                pt-28
+                pt-20
                 px-6
             "
         >
@@ -13,7 +14,7 @@ export default function Hero() {
                     mx-auto
                     grid
                     lg:grid-cols-2
-                    gap-16
+                    gap-12 lg:gap-16
                     items-center
                     
                 "
@@ -44,22 +45,20 @@ export default function Hero() {
 
                     <h1
                         className="
-                            text-5xl
-                            md:text-7xl
+                            text-4xl
+                            md:text-6xl
                             font-bold
                             leading-tight
                         "
                     >
                        Building solutions that matter.
-                        <span className="text-[#7ED957]">
-                            {" "}
-                        </span>
                     </h1>
 
                     <p
                         className="
-                            mt-8
-                            text-lg
+                            mt-6
+                            text-base
+                            md:text-lg
                             text-gray-400
                             max-w-2xl
                         "
@@ -70,17 +69,17 @@ export default function Hero() {
                         real-world problems.
                     </p>
 
-                    <div className="mt-10 flex flex-wrap gap-5">
+                    <div className="mt-8 flex flex-wrap gap-4">
 
                         <button
                             className="
-                                px-8 py-4
+                                px-6 py-3
                                 rounded-xl
-                                bg-[#7ED957]
+                                bg-white
                                 text-black
                                 font-semibold
                                 hover:scale-105
-                                transition
+                                transition text-sm
                             "
                         >
                             View Projects
@@ -88,12 +87,12 @@ export default function Hero() {
 
                         <button
                             className="
-                                px-8 py-4
+                                px-6 py-3
                                 rounded-xl
                                 border
-                                border-white/10
-                                hover:border-[#7ED957]
-                                transition
+                                border-white/20
+                                hover:border-white
+                                transition text-sm
                             "
                         >
                             Get In Touch
@@ -119,20 +118,20 @@ export default function Hero() {
                             absolute
                             inset-0
                             rounded-full
-                            bg-[#7ED957]/20
+                            bg-white/10
                             blur-[100px]
                         "
                     />
 
                     <img
-                        src="/profile.png"
+                        src={profileImg}
                         alt="Profile"
                         className="
                             relative
         -top-6
         z-10
         w-full
-        max-w-md
+        max-w-sm
         mx-auto
         rounded-full
         border
@@ -145,15 +144,16 @@ export default function Hero() {
                     <div
                         className="
                             absolute
-                            top-10
-                            -left-10
+                            top-6
+                            -left-6
                             bg-white/5
                             backdrop-blur-md
                             border
                             border-white/10
                             rounded-xl
-                            px-5
-                            py-3
+                            px-4
+                            py-2
+                            text-sm
                         "
                     >
                         300+ DSA Problems
@@ -162,15 +162,16 @@ export default function Hero() {
                     <div
                         className="
                             absolute
-                            bottom-16
-                            -right-10
+                            bottom-12
+                            -right-6
                             bg-white/5
                             backdrop-blur-md
                             border
                             border-white/10
                             rounded-xl
-                            px-5
-                            py-3
+                            px-4
+                            py-2
+                            text-sm
                         "
                     >
                         Full Stack Developer

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiX, FiSend, FiUser } from 'react-icons/fi';
 import { RiRobot2Line } from 'react-icons/ri';
 
-const BACKEND_URL = 'https://portfolio-ai-assistant-0gv1.onrender.com/';
+const BACKEND_URL = 'https://portfolio-ai-assistant-0gv1.onrender.com';
 
 /* ─── Spinning loader for the send button ─── */
 const SpinnerIcon = () => (
@@ -205,10 +205,10 @@ const Message = ({ msg }) => {
 
 /* ─── Quick-ask suggestions ─── */
 const SUGGESTED = [
-  '🚀 Tell me about TalentLens AI',
-  '🤖 What AI projects did you build?',
-  '💻 What are your top skills?',
-  '📬 How can I hire you?',
+  'Tell me Something About Rudra',
+  'What are the projects did you build?',
+  ' What are your top skills?',
+  ' How can I hire you?',
 ];
 
 /* ════════════════════════════════════════════ */
@@ -272,7 +272,7 @@ const ChatAssistant = () => {
       setMessages((prev) => [...prev, { role: 'assistant', content: data.reply }]);
     } catch (err) {
       const msg = err.name === 'AbortError'
-        ? '⚠️ The server is waking up from sleep (Render free tier). Please try again in a moment!'
+        ? 'The server is waking up from sleep (Render free tier). Please try again in a moment!'
         : '⚠️ Cannot reach the AI server. Make sure the backend is deployed and GROQ_API_KEY is set in Render environment variables.';
       setMessages((prev) => [...prev, { role: 'assistant', content: msg }]);
     } finally {
@@ -357,7 +357,7 @@ const ChatAssistant = () => {
               width: 13,
               height: 13,
               borderRadius: '50%',
-              background: '#ff4d6d',
+              background: '#888888',
               border: '2px solid #0B0F0D',
             }}
           />

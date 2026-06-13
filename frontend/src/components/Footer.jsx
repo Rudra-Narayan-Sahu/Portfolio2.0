@@ -8,7 +8,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: FiGithub, link: 'https://github.com/Rudra-Narayan-Sahu', label: 'GitHub' },
     { icon: FiLinkedin, link: 'https://www.linkedin.com/in/rudra-narayan-sahu-16a946328/', label: 'LinkedIn' },
-    { icon: <FiLeetcode></FiLeetcode>, link: 'https://leetcode.com/u/Rudranarayansahu18/', label: 'Leetcode' },
+    { icon: FiCode, link: 'https://leetcode.com/u/Rudranarayansahu18/', label: 'Leetcode' },
     { icon: FiMail, link: 'rudrasahu9007@gmail.com', label: 'Email' },
   ];
 

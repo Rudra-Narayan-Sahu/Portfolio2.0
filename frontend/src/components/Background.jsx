@@ -89,7 +89,7 @@ export default function Background() {
             />
 
             {/* Layer 4: Floating Particles */}
-            <Particles color={glowColor} />
+            <Particles color="#ffffff" />
         </div>
     );
 }
